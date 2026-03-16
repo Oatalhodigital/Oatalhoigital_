@@ -4,63 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Atalho Digital | Curadoria de Elite</title>
-    <meta name="description" content="Curadoria de elite com as melhores ferramentas de marketing digital.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://oatalhodigital.github.io/Oatalhoigital_/">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="background-fixed"></div>
 
-    <main class="wrapper">
-        <header class="top-nav">
-            <div class="logo-area" onclick="launchRocket()">
-                <div id="rocket-box">
-                    <img src="https://img.freepik.com/fotos-premium/negocio-de-inicializacao-e-conceito-de-projeto-de-lancamento-com-foguete-azul-brilhante-digital-em-fundo-escuro-com-renderizacao-3d-de-pontos-desfocados_688884-494.jpg?w=2000" alt="Foguete" id="rocket-img">
-                    <span id="rocket-text">DECOLANDO! 🚀</span>
-                </div>
-                <h1>O ATALHO <span class="neon">DIGITAL</span></h1>
+    <header class="main-header">
+        <div class="logo-area" onclick="launchRocket()">
+            <div id="rocket-box">
+                <img src="https://img.freepik.com/fotos-premium/negocio-de-inicializacao-e-conceito-de-projeto-de-lancamento-com-foguete-azul-brilhante-digital-em-fundo-escuro-com-renderizacao-3d-de-pontos-desfocados_688884-494.jpg?w=2000" alt="Foguete" id="rocket-img">
             </div>
-            <p class="tagline">A cura para a estagnação digital está a um clique de distância.</p>
-        </header>
+            <h1>O ATALHO <span class="neon">DIGITAL</span></h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#catalogo">Catálogo</a>
+            <a href="#parceiros">Parceiros</a> 
+        </nav>
+    </header>
 
-        <div class="main-layout">
-            <aside class="sidebar">
-                <div class="card-glass mb-20">
-                    <h2 class="cyan-text"><i class="fas fa-bullseye"></i> Quem Somos</h2>
-                    <p>Cansado de promessas vazias? Nós sentimos essa mesma dor. Nascemos para ser o filtro que separa o ruído do resultado real.</p>
+    <section class="hero reveal">
+        <div class="hero-content">
+            <h2 class="neon-text">A Rota Mais Rápida para o O Que Você Procura!</h2>
+            <p class="tagline">O filtro definitivo entre o ruído e o resultado real. Nossa curadoria seleciona a dedo o que realmente escala seu jogo.</p>
+            <div class="hero-btns">
+                <button class="btn-main" onclick="document.getElementById('catalogo').scrollIntoView({behavior: 'smooth'})">Explorar Catálogo</button>
+                <button class="btn-sec" onclick="toggleModal('support-modal')"><i class="fab fa-whatsapp"></i> Suporte</button>
+            </div>
+        </div>
+        <div class="hero-image-overlay">
+            <img src="https://img.freepik.com/premium-photo/online-shopping-concept-businessman-with-shopping-cart-online-shopping-virtual-screen_568137-1751.jpg" alt="Sucesso Digital">
+        </div>
+    </section>
+
+    <div id="support-modal" class="modal">
+        <div class="modal-content card-glass">
+            <span class="close-modal" onclick="toggleModal('support-modal')">&times;</span>
+            <h3 class="cyan-text"><i class="fas fa-headset"></i> Nossos Canais</h3>
+            <p>Escolha como prefere falar conosco. Estamos prontos para destravar seu digital.</p>
+            <div class="support-links">
+                <a href="https://wa.me/5531982606442" target="_blank" class="support-item zap"><i class="fab fa-whatsapp"></i> WhatsApp Direct</a>
+                <a href="https://www.instagram.com/OAtalhoDigital_/" target="_blank" class="support-item insta"><i class="fab fa-instagram"></i> Instagram Oficial</a>
+                <a href="mailto:Oatalhodigital_@outlook.com" class="support-item email"><i class="far fa-envelope"></i> E-mail Corporativo</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="content-wrapper">
+        <section class="info-grid">
+            <div class="info-card reveal float-effect">
+                <h3 class="cyan-text"><i class="fas fa-bullseye"></i> Quem Somos</h3>
+                <p>O Atalho Digital nasceu para ser o filtro implacável que separa o buzz do mercado do resultado real. Não vendemos tudo, apenas o que funciona.</p>
+            </div>
+            <div class="info-card reveal float-effect">
+                <h3 class="cyan-text"><i class="fas fa-vial"></i> Método do Atalho</h3>
+                <p>Unimos IA e estratégias de alta performance para criar o caminho mais curto entre seu estado atual e o próximo nível.</p>
+            </div>
+        </section>
+    
+        <div id="catalogo"></div>
+
+        <section class="shelf" id="hotmart">
+            <div class="shelf-header-elite reveal">
+                <div class="platform-badge">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.ULLxUsYI4y1CMMWUBeKg1QHaE0?w=768&h=500&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hotmart Logo">
                 </div>
+                <h2 class="shelf-title">Digital & Cursos</h2>
+            </div>
 
-                <div class="card-glass mb-20">
-                    <h2 class="cyan-text"><i class="fas fa-heart-pulse"></i> Por que Ajudamos?</h2>
-                    <p>Entregamos a cura para que você pare de apenas sobreviver e comece a escalar com ferramentas de elite.</p>
-                    
-                    <div class="social-bar">
-                        <a href="https://www.instagram.com/OAtalhoDigital_/" target="_blank" class="s-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/5531982606442" target="_blank" class="s-icon"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.tiktok.com/@OAtalhoDigital_" target="_blank" class="s-icon"><i class="fab fa-tiktok"></i></a>
-                        <a href="mailto:Oatalhodigital_@outlook.com" class="s-icon"><i class="far fa-envelope"></i></a>
-                    </div>
-                </div>
-
-                <div class="card-glass testimonials">
-                    <h2 class="cyan-text"><i class="fas fa-star"></i> O que dizem</h2>
-                    <div class="item-test">
-                        <p>"Finalmente um lugar que filtra o que presta no marketing."</p>
-                        <span>- Carlos M. (Empresário)</span>
-                    </div>
-                    <div class="item-test">
-                        <p>"O ZapPost mudou meu jogo. Perfil ativo e vendendo."</p>
-                        <span>- Ana Paula (Afiliada)</span>
-                    </div>
-                </div>
-            </aside>
-
-            <section class="products-area">
-                
+            <div class="product-row">
                 <div class="product-item">
                     <div class="image-container" onclick="toggleProductDesc(this)">
                         <div class="product-img">
@@ -86,39 +100,34 @@
                 </div>
 
                 <div class="product-item">
-                    <div class="purchase-overlay">
+                    <div id="buy-autocad" class="purchase-overlay">
                         <div class="overlay-content">
-                            <h4 style="font-size: 0.9rem; margin-bottom: 15px; color: var(--cyan);">Selecione sua Licença</h4>
+                            <h4 class="cyan-text" style="font-size: 0.9rem; margin-bottom: 15px;">Escolha seu Atalho</h4>
                             <div class="plan-list">
-                                <a href="https://pay.kiwify.com.br/tuYnB7J?afid=0I0Int6c" target="_blank">Mensal (1 Licença)</a>
-                                <a href="https://pay.kiwify.com.br/tNRxzAZ?afid=0I0Int6c" target="_blank">Mensal (2 Licenças)</a>
-                                <a href="https://pay.kiwify.com.br/aGkp7DA?afid=0I0Int6c" target="_blank">Mensal (3 Licenças)</a>
-                                <a href="https://pay.kiwify.com.br/EeO5xF3?afid=0I0Int6c" target="_blank">Anual (1 Licença)</a>
-                                <a href="https://pay.kiwify.com.br/rCr8Sv3?afid=0I0Int6c" target="_blank">Anual (2 Licenças)</a>
-                                <a href="https://pay.kiwify.com.br/czydq4Z?afid=0I0Int6c" target="_blank">Anual (3 Licenças)</a>
+                                <a href="https://go.hotmart.com/N104859690C?ap=3129" target="_blank">Minicurso Gratuito</a>
+                                <a href="https://go.hotmart.com/N104859690C?ap=e5d5" target="_blank">Baixar E-book (Grátis)</a>
+                                <a href="https://go.hotmart.com/N104859690C?ap=4b22" target="_blank">Inscrição Direta (Completo)</a>
                             </div>
-                            <button onclick="closePurchase(this)" class="btn-close"> <i class="fas fa-times"></i> Voltar</button>
+                            <button onclick="togglePurchase('buy-autocad')" class="btn-close"> <i class="fas fa-times"></i> Voltar</button>
                         </div>
                     </div>
-
                     <div class="image-container" onclick="toggleProductDesc(this)">
                         <div class="product-img">
-                            <img src="https://cursoteu.com.br/wp-content/uploads/2024/11/zap-ninja_11zon.webp" alt="Zap Ninja">
+                            <img src="https://static-media.hotmart.com/dxOywvVQNUv29CUAT0FgYi9vALg=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/3362d0f0-727a-47dc-b299-6a8d1dc4b0f2/cad8.png?w=920" alt="AutoCAD">
                         </div>
                         <div class="product-overlay">
                             <div class="overlay-content">
-                                <h4>Automação Silenciosa</h4>
-                                <p>Extração massiva de contatos, disparos ilimitados e sistema anti-bloqueio. Escala profissional sem perda de tempo.</p>
-                                <small>Clique para fechar</small>
+                                <h4>AutoCAD Pro</h4>
+                                <p>Domine o software padrão da indústria. Método focado na prática para construir autoridade real.</p>
                             </div>
                         </div>
                         <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
                     </div>
                     <div class="product-details">
-                        <h3>ZAP NINJA</h3>
-                        <p class="impact-phrase">"Venda em escala ninja com automação de elite."</p>
+                        <h3>AUTOCAD PRO</h3>
+                        <p class="impact-phrase">"Onde o projeto encontra o lucro real."</p>
                         <div class="cta-btns">
-                            <button onclick="openPurchase(this)" class="btn-primary">Atalho</button>
+                            <button onclick="togglePurchase('buy-autocad')" class="btn-primary">Atalho</button>
                             <a href="https://wa.me/5531982606442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
@@ -132,8 +141,7 @@
                         <div class="product-overlay">
                             <div class="overlay-content">
                                 <h4>Filtro de Finanças</h4>
-                                <p>Guia prático para organizar contas e eliminar dívidas, construindo um plano real de liberdade financeira.</p>
-                                <small>Clique para fechar</small>
+                                <p>Guia prático para organizar contas e eliminar dívidas, construindo liberdade financeira.</p>
                             </div>
                         </div>
                         <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
@@ -156,90 +164,238 @@
                         <div class="product-overlay">
                             <div class="overlay-content">
                                 <h4>Máquina de Vendas</h4>
-                                <p>Plataforma completa de automação de marketing digital. Centralize seus leads, e-mails e funis de vendas em um só lugar para escalar seu negócio de forma automática.</p>
-                                <small>Clique para fechar</small>
+                                <p>Plataforma completa de automação de marketing digital. Centralize leads e funis.</p>
                             </div>
                         </div>
                         <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
                     </div>
                     <div class="product-details">
                         <h3>LEADLOVERS</h3>
-                        <p class="impact-phrase">"A solução definitiva para automação e vendas."</p>
+                        <p class="impact-phrase">"A solução definitiva para automação."</p>
                         <div class="cta-btns">
                             <a href="https://go.hotmart.com/X104592519P?ap=f792" target="_blank" class="btn-primary">Atalho</a>
                             <a href="https://wa.me/5531982606442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
-<div class="product-item">
-    <div class="purchase-overlay">
-        <div class="overlay-content">
-            <h4 style="font-size: 0.9rem; margin-bottom: 15px; color: var(--cyan);">Escolha seu Atalho</h4>
-            <div class="plan-list">
-                <a href="https://go.hotmart.com/N104859690C?ap=3129" target="_blank">Minicurso Gratuito (3 Aulas)</a>
-                <a href="https://go.hotmart.com/N104859690C?ap=e5d5" target="_blank">Baixar E-book (Grátis)</a>
-                <a href="https://go.hotmart.com/N104859690C" target="_blank">Página Oficial</a>
-                <a href="https://go.hotmart.com/N104859690C?ap=4b22" target="_blank">Inscrição Direta (Completo)</a>
-                <a href="https://go.hotmart.com/N104859690C?ap=17ed" target="_blank">Checkout (Sem Boleto)</a>
             </div>
-            <button onclick="closePurchase(this)" class="btn-close"> <i class="fas fa-times"></i> Voltar</button>
-        </div>
-    </div>
+        </section>
 
-    <div class="image-container" onclick="toggleProductDesc(this)">
-        <div class="product-img">
-            <img src="https://static-media.hotmart.com/dxOywvVQNUv29CUAT0FgYi9vALg=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/3362d0f0-727a-47dc-b299-6a8d1dc4b0f2/cad8.png?w=920" alt="Curso AutoCAD Profissional">
-        </div>
-        <div class="product-overlay">
-            <div class="overlay-content">
-                <h4>AutoCAD do Básico ao Avançado</h4>
-                <p>Domine o software padrão da indústria de projetos. Um método focado na prática para quem busca sair do básico e construir autoridade real.</p>
-                <small>Clique para fechar</small>
+        <section class="shelf" id="kiwify">
+            <div class="shelf-header-elite reveal">
+                <div class="platform-badge">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.hBj2_Od4yMhLHFOd1c9G7AHaD4?w=1200&h=630&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Kiwify Logo">
+                </div>
+                <h2 class="shelf-title">Escala & Automação</h2>
             </div>
-        </div>
-        <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
-    </div>
-    
-    <div class="product-details">
-        <h3>AUTO CAD</h3>
-        <p class="impact-phrase">"Onde o projeto encontra o lucro real."</p>
-        <div class="cta-btns">
-            <button onclick="openPurchase(this)" class="btn-primary">Atalho</button>
-            <a href="https://wa.me/5531982606442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i></a>
-        </div>
-    </div>
-</div>
-            </section>
-        </div>
+            <div class="product-row">
+                <div class="product-item">
+                    <div id="buy-ninja" class="purchase-overlay">
+                        <div class="overlay-content">
+                            <h4 class="cyan-text" style="font-size: 0.9rem; margin-bottom: 15px;">Selecione sua Licença</h4>
+                            <div class="plan-list">
+                                <a href="https://pay.kiwify.com.br/tuYnB7J?afid=0I0Int6c" target="_blank">Mensal (1 Licença)</a>
+                                <a href="https://pay.kiwify.com.br/EeO5xF3?afid=0I0Int6c" target="_blank">Anual (1 Licença)</a>
+                            </div>
+                            <button onclick="togglePurchase('buy-ninja')" class="btn-close"> <i class="fas fa-times"></i> Voltar</button>
+                        </div>
+                    </div>
+                    <div class="image-container" onclick="toggleProductDesc(this)">
+                        <div class="product-img">
+                            <img src="https://cursoteu.com.br/wp-content/uploads/2024/11/zap-ninja_11zon.webp" alt="Zap Ninja">
+                        </div>
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <h4>Automação Ninja</h4>
+                                <p>Extração massiva de contatos, disparos ilimitados e sistema anti-bloqueio.</p>
+                            </div>
+                        </div>
+                        <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>ZAP NINJA</h3>
+                        <p class="impact-phrase">"Venda em escala ninja."</p>
+                        <div class="cta-btns">
+                            <button onclick="togglePurchase('buy-ninja')" class="btn-primary">Atalho</button>
+                            <a href="https://wa.me/5531982606442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer class="main-footer">
-            <hr class="footer-divider">
-            <p>Obrigado por confiar na nossa curadoria.</p>
-            <span class="neon-small">O ATALHO DIGITAL &copy; 2026</span>
-        </footer>
+        <section class="shelf" id="mercadolivre">
+            <div class="shelf-header-elite reveal">
+                <div class="platform-badge">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.xKxbHq3LofoWhwRRDxtzzAHaEH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mercado Livre Logo">
+                </div>
+                <h2 class="shelf-title">Lifestyle & Setup</h2>
+            </div>
+            
+            <div class="product-row">
+                <div class="product-item">
+                    <div class="image-container" onclick="toggleProductDesc(this)">
+                        <div class="product-img">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_605924-MLA72087565860_102023-O.webp" alt="Cadeira Pro">
+                        </div>
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <h4>Alta Performance</h4>
+                                <p>Ergonomia é a base do foco. Uma boa cadeira não é gasto, é investimento em horas extras de produtividade.</p>
+                            </div>
+                        </div>
+                        <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>CADEIRA ERGONÔMICA</h3>
+                        <p class="impact-phrase">"Conforto para quem joga o jogo longo."</p>
+                        <div class="cta-btns">
+                            <a href="https://www.mercadolivre.com.br" target="_blank" class="btn-primary">Ver Preço</a>
+                            <a href="https://wa.me/5531982606442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container" onclick="toggleProductDesc(this)">
+                        <div class="product-img">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_918507-MLA72675971485_112023-O.webp" alt="Setup Minimalista">
+                        </div>
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <h4>Setup Minimalista</h4>
+                                <p>Teclado mecânico silencioso e mouse vertical para evitar lesões e acelerar o workflow.</p>
+                            </div>
+                        </div>
+                        <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>KIT SETUP ELITE</h3>
+                        <p class="impact-phrase">"Precisão em cada clique do seu funil."</p>
+                        <div class="cta-btns">
+                            <a href="https://www.mercadolivre.com.br" target="_blank" class="btn-primary">Ver Preço</a>
+                            <a href="https://wa.me/5531982606442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="image-container" onclick="toggleProductDesc(this)">
+                        <div class="product-img">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_727931-MLU74218824890_012024-O.webp" alt="Livro Hábitos Atômicos">
+                        </div>
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <h4>Mentalidade Brutal</h4>
+                                <p>A leitura que molda os grandes players do mercado. Hábitos pequenos, resultados exponenciais.</p>
+                            </div>
+                        </div>
+                        <div class="click-badge"><i class="fas fa-info-circle"></i> Saiba mais</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>BIBLIOTECA DO ATALHO</h3>
+                        <p class="impact-phrase">"O conhecimento que ninguém te tira."</p>
+                        <div class="cta-btns">
+                            <a href="https://www.mercadolivre.com.br" target="_blank" class="btn-primary">Ver Preço</a>
+                            <a href="https://wa.me/5531982606442" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>''
+
+        <section id="feedback-section" class="feedback-area reveal">
+            <div class="container-feedback">
+                <h2 class="shelf-title centralizado">Voz da Comunidade</h2>
+                <div class="testimonial-wall" id="comment-display">
+                    <div class="info-card float-card comment-item">
+                        <p>"A curadoria é de outro planeta. O Atalho me economizou meses."</p>
+                        <span class="user-auth">- Carlos M. (Empresário)</span>
+                    </div>
+                    <div class="info-card float-card comment-item">
+                        <p>"Finalmente ferramentas que funcionam."</p>
+                        <span class="user-auth">- Amanda P. (Marketing)</span>
+                    </div>
+                </div>
+
+                <div class="comment-form card-glass reveal float-card">
+                    <h4 class="cyan-text"><i class="fas fa-pen-nib"></i> Deixe seu depoimento</h4>
+                    <div class="form-group">
+                        <input type="text" id="user-name" placeholder="Seu nome ou profissão">
+                        <textarea id="user-comment" placeholder="Como o Atalho Digital te ajudou hoje?"></textarea>
+                        <button class="btn-main" onclick="addComment()">Publicar Avaliação</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parceiros-area reveal" id="parceiros">
+            <h3 class="shelf-title centralizado">Ecossistema de Elite</h3>
+            <div class="parceiros-logos">
+                <div class="logo-wrapper">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.ULLxUsYI4y1CMMWUBeKg1QHaE0?w=768&h=500&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Hotmart Logo">
+                </div>
+                <div class="logo-wrapper">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.hBj2_Od4yMhLHFOd1c9G7AHaD4?w=1200&h=630&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Kiwify Logo">
+                </div>
+                <div class="logo-wrapper">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.xKxbHq3LofoWhwRRDxtzzAHaEH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mercado Livre Logo">
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="main-footer centralizado">
+        <div class="footer-content reveal">
+            <h3 class="cyan-text neon-text-slow">O Atalho Digital</h3>
+            <p>Sua Curadoria de Elite no Caos do Mercado.</p>
+            <p class="thanks">Obrigado por confiar no nosso critério.</p>
+            <hr class="footer-divider-center">
+            <span class="copyright">O ATALHO DIGITAL &copy; 2026</span>
+        </div>
+    </footer>
+
     <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
         function launchRocket() {
             const box = document.getElementById('rocket-box');
-            box.classList.add('fly-away');
-            setTimeout(() => { box.classList.remove('fly-away'); }, 1000);
+            box.classList.add('fly');
+            setTimeout(() => box.classList.remove('fly'), 1000);
+        }
+
+        function toggleModal(id) {
+            document.getElementById(id).classList.toggle('active');
         }
 
         function toggleProductDesc(element) {
-            const overlay = element.querySelector('.product-overlay');
-            if(overlay) overlay.classList.toggle('active');
+            element.querySelector('.product-overlay').classList.toggle('active');
         }
 
-        function openPurchase(btn) {
-            const card = btn.closest('.product-item');
-            const overlay = card.querySelector('.purchase-overlay');
-            overlay.classList.add('active');
+        function togglePurchase(id) {
+            document.getElementById(id).classList.toggle('active');
         }
 
-        function closePurchase(btn) {
-            const overlay = btn.closest('.purchase-overlay');
-            overlay.classList.remove('active');
+        function addComment() {
+            const name = document.getElementById('user-name').value;
+            const msg = document.getElementById('user-comment').value;
+            const wall = document.getElementById('comment-display');
+
+            if(!name || !msg) return alert("Preencha os campos!");
+
+            const div = document.createElement('div');
+            div.className = "info-card float-card comment-item active";
+            div.innerHTML = `<p>"${msg}"</p><span class="user-auth">- ${name}</span>`;
+            
+            wall.prepend(div);
+            document.getElementById('user-name').value = "";
+            document.getElementById('user-comment').value = "";
         }
     </script>
 </body>
